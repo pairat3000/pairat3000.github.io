@@ -1,87 +1,96 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Systems - pairat3000</title>
-  <style>
-    :root { --primary: #1877F2; --primary-hover: #166FE5; --text: #1C1E21; --muted: #65676B; --bg: #F0F2F5; --card: #FFFFFF; --border: #CED0D4; --font: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background: var(--bg); font-family: var(--font); color: var(--text); min-height: 100vh; }
-    header { background: var(--primary); padding: 0 32px; display: flex; align-items: center; justify-content: space-between; height: 60px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
-    .logo { display: flex; align-items: center; gap: 10px; }
-    .logo-icon { width: 36px; height: 36px; background: rgba(255,255,255,0.2); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 20px; }
-    .logo h1 { color: #fff; font-size: 18px; font-weight: 700; }
-    .header-sub { color: rgba(255,255,255,0.75); font-size: 13px; }
-    .hero { background: linear-gradient(135deg, #1877F2, #0d5ec4); padding: 56px 32px 48px; text-align: center; color: #fff; }
-    .hero h2 { font-size: 30px; font-weight: 700; margin-bottom: 10px; }
-    .hero p { font-size: 15px; color: rgba(255,255,255,0.8); margin-bottom: 20px; }
-    .badge { display: inline-block; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); border-radius: 20px; padding: 5px 14px; font-size: 13px; color: #fff; }
-    main { max-width: 960px; margin: 0 auto; padding: 40px 24px 60px; }
-    .stats { display: flex; gap: 12px; margin-bottom: 32px; flex-wrap: wrap; }
-    .stat { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 14px 20px; flex: 1; min-width: 120px; text-align: center; }
-    .stat .n { font-size: 26px; font-weight: 700; color: var(--primary); line-height: 1; margin-bottom: 4px; }
-    .stat .l { font-size: 12px; color: var(--muted); }
-    .label { font-size: 13px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
-    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); transition: box-shadow .2s, transform .2s; }
-    .card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.12); transform: translateY(-2px); }
-    .card-top { padding: 20px 20px 16px; display: flex; align-items: flex-start; gap: 14px; }
-    .icon { width: 52px; height: 52px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 26px; flex-shrink: 0; }
-    .icon-o { background: #FFF3E8; } .icon-b { background: #E8F2FF; } .icon-p { background: #F0EEFF; } .icon-t { background: #E6F9F6; }
-    .card-top h3 { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
-    .card-top p { font-size: 13px; color: var(--muted); line-height: 1.5; }
-    .divider { height: 1px; background: var(--border); margin: 0 20px; }
-    .card-bot { padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; }
-    .tech { font-size: 11px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: var(--bg); color: var(--muted); border: 1px solid var(--border); }
-    .btn { display: inline-flex; align-items: center; gap: 6px; background: var(--primary); color: #fff; font-size: 13px; font-weight: 600; padding: 7px 14px; border-radius: 8px; text-decoration: none; transition: background .15s; }
-    .btn:hover { background: var(--primary-hover); }
-    footer { text-align: center; padding: 24px; font-size: 12px; color: var(--muted); border-top: 1px solid var(--border); }
-    footer a { color: var(--primary); text-decoration: none; font-weight: 600; }
-  </style>
-    <link rel="icon" href="logo.png" type="image/png">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My Systems - pairat3000</title>
+<style>
+:root { --primary: #1877F2; --primary-hover: #166FE5; --text: #1C1E21; --muted: #65676B; --bg: #F0F2F5; --card: #FFFFFF; --border: #CED0D4; --font: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); font-family: var(--font); color: var(--text); min-height: 100vh; }
+header { background: var(--primary); padding: 0 32px; display: flex; align-items: center; justify-content: space-between; height: 60px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+.logo { display: flex; align-items: center; gap: 10px; }
+.logo-icon { width: 36px; height: 36px; background: rgba(255,255,255,0.2); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 20px; }
+.logo h1 { color: #fff; font-size: 18px; font-weight: 700; }
+.header-sub { color: rgba(255,255,255,0.75); font-size: 13px; }
+.hero { background: linear-gradient(135deg, #1877F2, #0d5ec4); padding: 56px 32px 48px; text-align: center; color: #fff; }
+.hero h2 { font-size: 30px; font-weight: 700; margin-bottom: 10px; }
+.hero p { font-size: 15px; color: rgba(255,255,255,0.8); margin-bottom: 20px; }
+.badge { display: inline-block; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); border-radius: 20px; padding: 5px 14px; font-size: 13px; color: #fff; }
+main { max-width: 960px; margin: 0 auto; padding: 40px 24px 60px; }
+.stats { display: flex; gap: 12px; margin-bottom: 32px; flex-wrap: wrap; }
+.stat { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 14px 20px; flex: 1; min-width: 120px; text-align: center; }
+.stat .n { font-size: 26px; font-weight: 700; color: var(--primary); line-height: 1; margin-bottom: 4px; }
+.stat .l { font-size: 12px; color: var(--muted); }
+.label { font-size: 13px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); transition: box-shadow .2s, transform .2s; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.12); transform: translateY(-2px); }
+.card-top { padding: 20px 20px 16px; display: flex; align-items: flex-start; gap: 14px; }
+.icon { width: 52px; height: 52px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 26px; flex-shrink: 0; }
+.icon-o { background: #FFF3E8; }
+.icon-b { background: #E8F2FF; }
+.icon-p { background: #F0EEFF; }
+.icon-t { background: #E6F9F6; }
+.icon-r { background: #FFEAEA; }
+.card-top h3 { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+.card-top p { font-size: 13px; color: var(--muted); line-height: 1.5; }
+.divider { height: 1px; background: var(--border); margin: 0 20px; }
+.card-bot { padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; }
+.tech { font-size: 11px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background: var(--bg); color: var(--muted); border: 1px solid var(--border); }
+.btn { display: inline-flex; align-items: center; gap: 6px; background: var(--primary); color: #fff; font-size: 13px; font-weight: 600; padding: 7px 14px; border-radius: 8px; text-decoration: none; transition: background .15s; }
+.btn:hover { background: var(--primary-hover); }
+footer { text-align: center; padding: 24px; font-size: 12px; color: var(--muted); border-top: 1px solid var(--border); }
+footer a { color: var(--primary); text-decoration: none; font-weight: 600; }
+</style>
+<link rel="icon" href="logo.png" type="image/png">
 </head>
 <body>
-  <header>
-    <div class="logo"><div class="logo-icon"><img src="logo.png" style="width:36px;height:36px;border-radius:8px;object-fit:cover;"></div><h1>My Systems</h1></div>
-    <span class="header-sub">pairat3000</span>
-  </header>
-  <div class="hero">
-    <h2>ระบบทั้งหมดของฉัน</h2>
-    <p>รวมทุกระบบไว้ในที่เดียว เข้าถึงง่าย ใช้งานสะดวก</p>
-    <span class="badge">🌐 GitHub Pages Hosted</span>
-  </div>
-  <main>
-    <div class="stats">
-      <div class="stat"><div class="n">4</div><div class="l">ระบบทั้งหมด</div></div>
-      <div class="stat"><div class="n">3</div><div class="l">Tech Stacks</div></div>
-      <div class="stat"><div class="n">4</div><div class="l">Public Repos</div></div>
-      <div class="stat"><div class="n">Live</div><div class="l">สถานะ</div></div>
-    </div>
-    <div class="label">ระบบทั้งหมด</div>
-    <div class="grid">
-      <div class="card">
-        <div class="card-top"><div class="icon icon-o">🟠</div><div><h3>DH Sales</h3><p>ระบบจัดการตารางนัดหมายลูกค้า สำหรับทีม Sales ของ Dohome</p></div></div>
-        <div class="divider"></div>
-        <div class="card-bot"><span class="tech">TypeScript · React</span><a class="btn" href="https://pairat3000.github.io/dh-sales/" target="_blank">เปิดระบบ ↗</a></div>
-      </div>
-      <div class="card">
-        <div class="card-top"><div class="icon icon-b">✅</div><div><h3>Golf Task App</h3><p>ระบบจัดการงาน Project ของฉัน พร้อม Kanban Board และ AI Planner</p></div></div>
-        <div class="divider"></div>
-        <div class="card-bot"><span class="tech">JavaScript · Vite</span><a class="btn" href="https://pairat3000.github.io/golf-task-app/" target="_blank">เปิดระบบ ↗</a></div>
-      </div>
-      <div class="card">
-        <div class="card-top"><div class="icon icon-p">📍</div><div><h3>Location Share</h3><p>ระบบขอ Location จากผู้อื่น ง่ายๆ ใน 1 คลิก เปิด Google Maps อัตโนมัติ</p></div></div>
-        <div class="divider"></div>
-        <div class="card-bot"><span class="tech">HTML · Vanilla JS</span><a class="btn" href="https://pairat3000.github.io/location-share/" target="_blank">เปิดระบบ ↗</a></div>
-      </div>
-      <div class="card">
-        <div class="card-top"><div class="icon icon-t">🚢</div><div><h3>SML-Marine Dashboard</h3><p>Case Management Dashboard สำหรับ Marine App &amp; SML App แบบ Unified View</p></div></div>
-        <div class="divider"></div>
-        <div class="card-bot"><span class="tech">HTML · Chart.js</span><a class="btn" href="https://pairat3000.github.io/SML-Marine/" target="_blank">เปิดระบบ ↗</a></div>
-      </div>
-    </div>
-  </main>
-  <footer>สร้างโดย <a href="https://github.com/pairat3000" target="_blank">pairat3000</a> · GitHub Pages · 2026</footer>
+<header>
+<div class="logo"><div class="logo-icon"><img src="logo.png" style="width:36px;height:36px;border-radius:8px;object-fit:cover;"></div><h1>My Systems</h1></div>
+<span class="header-sub">pairat3000</span>
+</header>
+<div class="hero">
+<h2>ระบบทั้งหมดของฉัน</h2>
+<p>รวมทุกระบบไว้ในที่เดียว เข้าถึงง่าย ใช้งานสะดวก</p>
+<span class="badge">🌐 GitHub Pages Hosted</span>
+</div>
+<main>
+<div class="stats">
+<div class="stat"><div class="n">5</div><div class="l">ระบบทั้งหมด</div></div>
+<div class="stat"><div class="n">3</div><div class="l">Tech Stacks</div></div>
+<div class="stat"><div class="n">5</div><div class="l">Public Repos</div></div>
+<div class="stat"><div class="n">Live</div><div class="l">สถานะ</div></div>
+</div>
+<div class="label">ระบบทั้งหมด</div>
+<div class="grid">
+<div class="card">
+<div class="card-top"><div class="icon icon-o">🟠</div><div><h3>DH Sales</h3><p>ระบบจัดการตารางนัดหมายลูกค้า สำหรับทีม Sales ของ Dohome</p></div></div>
+<div class="divider"></div>
+<div class="card-bot"><span class="tech">TypeScript · React</span><a class="btn" href="https://pairat3000.github.io/dh-sales/" target="_blank">เปิดระบบ ↗</a></div>
+</div>
+<div class="card">
+<div class="card-top"><div class="icon icon-b">✅</div><div><h3>Golf Task App</h3><p>ระบบจัดการงาน Project ของฉัน พร้อม Kanban Board และ AI Planner</p></div></div>
+<div class="divider"></div>
+<div class="card-bot"><span class="tech">JavaScript · Vite</span><a class="btn" href="https://pairat3000.github.io/golf-task-app/" target="_blank">เปิดระบบ ↗</a></div>
+</div>
+<div class="card">
+<div class="card-top"><div class="icon icon-p">📍</div><div><h3>Location Share</h3><p>ระบบขอ Location จากผู้อื่น ง่ายๆ ใน 1 คลิก เปิด Google Maps อัตโนมัติ</p></div></div>
+<div class="divider"></div>
+<div class="card-bot"><span class="tech">HTML · Vanilla JS</span><a class="btn" href="https://pairat3000.github.io/location-share/" target="_blank">เปิดระบบ ↗</a></div>
+</div>
+<div class="card">
+<div class="card-top"><div class="icon icon-t">🚢</div><div><h3>SML-Marine Dashboard</h3><p>Case Management Dashboard สำหรับ Marine App &amp; SML App แบบ Unified View</p></div></div>
+<div class="divider"></div>
+<div class="card-bot"><span class="tech">HTML · Chart.js</span><a class="btn" href="https://pairat3000.github.io/SML-Marine/" target="_blank">เปิดระบบ ↗</a></div>
+</div>
+<div class="card">
+<div class="card-top"><div class="icon icon-r">🎬</div><div><h3>YT Auto Content Studio</h3><p>สร้าง Content อัตโนมัติสู่ YouTube เลือก Niche, ภาษา, Script + SEO ให้ทันที</p></div></div>
+<div class="divider"></div>
+<div class="card-bot"><span class="tech">HTML · Vanilla JS</span><a class="btn" href="https://pairat3000.github.io/yt-auto-content/" target="_blank">เปิดระบบ ↗</a></div>
+</div>
+</div>
+</main>
+<footer>สร้างโดย <a href="https://github.com/pairat3000" target="_blank">pairat3000</a> · GitHub Pages · 2026</footer>
 </body>
 </html>
