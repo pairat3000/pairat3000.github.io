@@ -1,0 +1,27 @@
+{
+  "name": "My Systems - pairat3000",
+  "short_name": "My Systems",
+  "description": "รวมระบบทั้งหมดของ pairat3000 ไว้ในที่เดียว",
+  "lang": "th",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#F0F2F5",
+  "theme_color": "#1877F2",
+  "categories": ["productivity", "business"],
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
