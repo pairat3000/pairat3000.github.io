@@ -1,0 +1,51 @@
+{
+  "version": "1.0",
+  "updated": "2026-04-30",
+  "systems": [
+    {
+      "id": "dh-sales",
+      "title": "DH Sales",
+      "desc": "ระบบจัดการตารางนัดหมายลูกค้า สำหรับทีม Sales ของ Dohome",
+      "icon": "🟠",
+      "iconClass": "icon-o",
+      "tech": "TypeScript · React",
+      "url": "https://pairat3000.github.io/dh-sales/"
+    },
+    {
+      "id": "golf-task-app",
+      "title": "Golf Task App",
+      "desc": "ระบบจัดการงาน Project ของฉัน พร้อม Kanban Board และ AI Planner",
+      "icon": "✅",
+      "iconClass": "icon-b",
+      "tech": "JavaScript · Vite",
+      "url": "https://pairat3000.github.io/golf-task-app/"
+    },
+    {
+      "id": "location-share",
+      "title": "Location Share",
+      "desc": "ระบบขอ Location จากผู้อื่น ง่ายๆ ใน 1 คลิก เปิด Google Maps อัตโนมัติ",
+      "icon": "📍",
+      "iconClass": "icon-p",
+      "tech": "HTML · Vanilla JS",
+      "url": "https://pairat3000.github.io/location-share/"
+    },
+    {
+      "id": "sml-marine",
+      "title": "SML-Marine Dashboard",
+      "desc": "Case Management Dashboard สำหรับ Marine App & SML App แบบ Unified View",
+      "icon": "🚢",
+      "iconClass": "icon-t",
+      "tech": "HTML · Chart.js",
+      "url": "https://pairat3000.github.io/SML-Marine/"
+    },
+    {
+      "id": "yt-auto-content",
+      "title": "YT Auto Content Studio",
+      "desc": "สร้าง Content อัตโนมัติสู่ YouTube เลือก Niche, ภาษา, Script + SEO ให้ทันที",
+      "icon": "🎬",
+      "iconClass": "icon-r",
+      "tech": "HTML · Vanilla JS",
+      "url": "https://pairat3000.github.io/yt-auto-content/"
+    }
+  ]
+}
